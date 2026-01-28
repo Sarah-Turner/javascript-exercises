@@ -9,6 +9,7 @@ In this directory you will find 2 other files:
 This setup should be similar for all of the exercises. The plain javascript file is where you'll write your code, and the `spec` file contains the tests that verify your code is functional.
 
 Let's look at the spec file first:
+
 ```javascript
 const helloWorld = require('./helloWorld');
 
@@ -25,6 +26,7 @@ The next block (`describe()`) is the body of the test. Basically, all it's doing
 For now you do not need to worry about how to write tests, but you should try to get comfortable enough with the syntax to figure out what the tests are asking you to do. Go ahead and run the tests by entering `npm test helloWorld.spec.js` in the terminal and watch it fail. The output from that command should tell you exactly what went wrong with your code. In this case, running the `helloWorld()` function should return the phrase 'Hello, World!' but instead it returns an empty string...
 
 so let's look at the javascript file:
+
 ```javascript
 const helloWorld = function() {
   return ''
@@ -39,6 +41,7 @@ Go ahead and see if you can make the test pass by editing the return value of th
 Just to make sure, in case you're confused at this point, the test is telling you that running the function `helloWorld` should return the phrase `Hello, World!`. Punctuation and capitalization definitely matter here, so double check that if the test still isn't passing.
 
 This is what the final function should look like:
+
 ```javascript
 const helloWorld = function() {
   return 'Hello, World!'
